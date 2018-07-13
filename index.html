@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <title>Find-A-Pet</title>
+  </head>
+  <body>
+    <header class="bg-light text-center mb-4 p-3">
+      <img src="assets/img/logo.png" alt="Find-A-Pet">
+    </header>
+
+    <div class="container">
+      <form id="pet-form" action="index.html" method="post">
+        <div class="form-group">
+          <label for="animal">Animal</label>
+          <select class="form-control form-control-lg mb-3" id="animal">
+            <option value="cat">Cat</option>
+            <option value="dog">Dog</option>
+            <option value="bird">Bird</option>
+            <option value="barnyard">Barnyard</option>
+          </select>
+          <input type="text" id="zip" class="form-control form-control-lg" placeholder="Enter your zipcode">
+          <input type="submit" class="btn btn-dark btn-lg btn-block mt-3" value="Find">
+        </div>
+      </form>
+
+      <div id="results"></div>
+
+    </div>
+
+    
+    <script src="js/main.js"></script>
+  </body>
+</html>
